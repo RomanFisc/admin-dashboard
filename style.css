@@ -1,0 +1,35 @@
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "nav header"
+    "nav main";
+}
+
+.logo {
+    width: 30px;
+    height: auto;
+}
+
+.logo2 {
+    width: 30px;
+    height: auto;
+}
+
+.logo3 {
+    width: 30px;
+    height: auto;
+}
+
+.icon {
+    width: 30px;
+    height: auto;
+}
+
+.mini-logo {
+    width: 20px;
+    height: auto;
+}
