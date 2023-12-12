@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 .container {
@@ -9,24 +10,142 @@ body {
     "nav main";
 }
 
-.logo {
+.header {
+    display: grid;
+    grid-area: header;
+    grid-template-columns: 
+    3fr 2fr;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 5px;
+    gap: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.searcher {
+    width: 40vw;
+    height: 35px;
+    background-color: rgb(205, 205, 205);
+    border-radius: 20px;
+}
+
+.user {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.icon {
     width: 30px;
     height: auto;
 }
 
-.logo2 {
-    width: 30px;
+.logo {
+    width: 50px;
     height: auto;
 }
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.logo2 {
+    width: 80px;
+    height: auto;
+}
+
+.user-welcome {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.welcome-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.welcome-username {
+    font-size: 28px;
+}
+
+
+.header-buttons {
+    display: grid;
+    align-items: center;
+}
+
+.header-buttons ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.header-buttons button {
+    background-color: rgb(90, 15, 90);
+    color: #fff;
+    width: 120px;
+    height: 50px;
+    border-radius: 15px;
+    border-style: none;
+    font-size: 17px;
+}
+
+.header-buttons button:active {
+    background-color: rgb(225, 153, 225);
+    border: 2px solid rgb(90, 15, 90);
+    color:rgb(90, 15, 90);
+}
+
+
+/* Nav Bar */
+.header-buttons ul {
+    list-style-type: none;
+}
+
+
+.nav {
+    display: grid;
+    grid-area: nav;
+    background-color: rgb(193, 150, 184);
+}
+
+.nav ul{
+    list-style-type: none;
+}
+
+
 
 .logo3 {
     width: 30px;
     height: auto;
 }
 
-.icon {
-    width: 30px;
-    height: auto;
+
+
+.main {
+    background-color: rgb(222, 222, 222);
+}
+
+.projects {
+    display: grid;
+}
+
+.content-card {
+    background-color: #fff;
+    width: 200px;
 }
 
 .mini-logo {

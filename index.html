@@ -8,20 +8,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <img src="images/magnify.svg" alt="magnifying glass" class="icon">
-            <div class="search-bar"></div>
-            <img src="images/bell.svg" alt="bell" class="icon">
-            <img src="images/circle.svg" alt="logo" class="logo">
-            <p class="user">Roman Fischer</p>
+            <div class="search-bar">
+                <img src="images/magnify.svg" alt="magnifying glass" class="icon">
+                <div class="searcher"></div>
+            </div>
+            <div class="user-info">
+                <img src="images/bell.svg" alt="bell" class="icon">
+                <img src="images/circle.svg" alt="logo" class="logo">
+                <p class="user">Roman Fischer</p>
+            </div>
             <!--  Break for second row in Header -->
-            <img src="images/circle.svg" alt="logo" class="logo2">
-            <div class="welcome-title">
-                <p>Hi there,</p>
-                <p>Roman Fischer (@Roman)</p>
+            <div class="user-welcome"> 
+                <img src="images/circle.svg" alt="logo" class="logo2">
+                <div class="welcome-title">
+                    <p>Hi there, <br><span class="welcome-username">Roman Fischer (@Roman)</span></p>
+                    <!-- <p class="welcome-username">Roman Fischer (@Roman)</p> -->
+                </div>
             </div>
             <div class="header-buttons">
                 <ul>
@@ -57,11 +66,11 @@
                         <p>Profile</p>
                     </li>
                     <li>
-                        <img src="messages.svg" alt="messages" class="icon">
+                        <img src="images/messages.svg" alt="messages" class="icon">
                         <p>Messages</p>
                     </li>
                     <li>
-                        <img src="history.svg" alt="history" class="icon">
+                        <img src="images/clock.svg" alt="history" class="icon">
                         <p>History</p>
                     </li>
                     <li>
@@ -93,9 +102,12 @@
         </div>
         <div class="main">
             <div class="projects">
+                <div class="projects-title">
+                    <p>Your Projects</p>
+                </div>
                 <div class="content-card">
-                    <p class="card-title"></p>
-                    <p class="card-body"></p>
+                    <p class="card-title">Super Cool Project</p>
+                    <p class="card-body">This is placeholder text to signify the description of a project I guess. We can change this to be whatever it needs to be!</p>
                     <div class="icon-kit">
                         <img src="images/star.svg" alt="star" class="mini-logo">
                         <img src="images/eye.svg" alt="eye" class="mini-logo">
@@ -103,8 +115,8 @@
                     </div>
                 </div>
                 <div class="content-card">
-                    <p class="card-title"></p>
-                    <p class="card-body"></p>
+                    <p class="card-title">Less Cool Project</p>
+                    <p class="card-body">This is placeholder text to signify the description of a project I guess. We can change this to be whatever it needs to be!</p>
                     <div class="icon-kit">
                         <img src="images/star.svg" alt="star" class="mini-logo">
                         <img src="images/eye.svg" alt="eye" class="mini-logo">
@@ -112,8 +124,8 @@
                     </div>
                 </div>
                 <div class="content-card">
-                    <p class="card-title"></p>
-                    <p class="card-body"></p>
+                    <p class="card-title">Impossible App</p>
+                    <p class="card-body">This is placeholder text to signify the description of a project I guess. We can change this to be whatever it needs to be!</p>
                     <div class="icon-kit">
                         <img src="images/star.svg" alt="star" class="mini-logo">
                         <img src="images/eye.svg" alt="eye" class="mini-logo">
@@ -121,8 +133,8 @@
                     </div>
                 </div>
                 <div class="content-card">
-                    <p class="card-title"></p>
-                    <p class="card-body"></p>
+                    <p class="card-title">Ad Blocker</p>
+                    <p class="card-body">This is placeholder text to signify the description of a project I guess. We can change this to be whatever it needs to be!</p>
                     <div class="icon-kit">
                         <img src="images/star.svg" alt="star" class="mini-logo">
                         <img src="images/eye.svg" alt="eye" class="mini-logo">
@@ -130,8 +142,8 @@
                     </div>
                 </div>
                 <div class="content-card">
-                    <p class="card-title"></p>
-                    <p class="card-body"></p>
+                    <p class="card-title">Easy Peasy App</p>
+                    <p class="card-body">This is placeholder text to signify the description of a project I guess. We can change this to be whatever it needs to be!</p>
                     <div class="icon-kit">
                         <img src="images/star.svg" alt="star" class="mini-logo">
                         <img src="images/eye.svg" alt="eye" class="mini-logo">
@@ -139,8 +151,8 @@
                     </div>
                 </div>
                 <div class="content-card">
-                    <p class="card-title"></p>
-                    <p class="card-body"></p>
+                    <p class="card-title">Money Maker</p>
+                    <p class="card-body">This is placeholder text to signify the description of a project I guess. We can change this to be whatever it needs to be!</p>
                     <div class="icon-kit">
                         <img src="images/star.svg" alt="star" class="mini-logo">
                         <img src="images/eye.svg" alt="eye" class="mini-logo">
@@ -149,39 +161,45 @@
                 </div>
             </div>
             <div class="announcements">
-                <div class="announcement-card">
-                    <p class="a-title"></p>
-                    <p class="a-body"></p>
+                <div class="announcements-title">
+                    <p>Announcements</p>
                 </div>
                 <div class="announcement-card">
-                    <p class="a-title"></p>
-                    <p class="a-body"></p>
+                    <p class="a-title">Site Maintenance</p>
+                    <p class="a-body">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div>
                 <div class="announcement-card">
-                    <p class="a-title"></p>
-                    <p class="a-body"></p>
+                    <p class="a-title">Community Share Day</p>
+                    <p class="a-body">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                </div>
+                <div class="announcement-card">
+                    <p class="a-title">Updated Privacy Policy</p>
+                    <p class="a-body">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
                 </div>
             </div>
             <div class="trending">
-                <div class="t-card">
-                    <img src="images/circle.svg" class="mini-logo">
-                    <p class="t-title"></p>
-                    <p class="t-body"></p>
+                <div class="trending-title">
+                    <p>Trending</p>
                 </div>
                 <div class="t-card">
                     <img src="images/circle.svg" class="mini-logo">
-                    <p class="t-title"></p>
-                    <p class="t-body"></p>
+                    <p class="t-title">@tegan</p>
+                    <p class="t-body">World Peace Builder</p>
                 </div>
                 <div class="t-card">
                     <img src="images/circle.svg" class="mini-logo">
-                    <p class="t-title"></p>
-                    <p class="t-body"></p>
+                    <p class="t-title">@morgan</p>
+                    <p class="t-body">Project Builder</p>
                 </div>
                 <div class="t-card">
                     <img src="images/circle.svg" class="mini-logo">
-                    <p class="t-title"></p>
-                    <p class="t-body"></p>
+                    <p class="t-title">@kendall</p>
+                    <p class="t-body">App Expert</p>
+                </div>
+                <div class="t-card">
+                    <img src="images/circle.svg" class="mini-logo">
+                    <p class="t-title">@alex</p>
+                    <p class="t-body">Traffic User</p>
                 </div>
             </div>
         </div>
